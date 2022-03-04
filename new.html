@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Method</h2>
+
+<p>How to define and use a Class method.</p>
+
+<p id="demo" onclick="value(1)" >click</p>
+<p id="demo" onclick="value(2)" >c1</p>
+<p id="demo" onclick="value(3)" >c2</p>
+<a href="" id="m1">as</a>
+<a href="" id="m2">ass</a>
+
+
+<button onclick="function_two(1)">1</button>
+<button onclick="function_two(2)">2</button>
+<button onclick="function_two(3)">3</button>
+
+<script>
+  var value1=0;
+  var value2=0;
+function value(x)
+  {
+    alert("hi")
+    value1=x;
+  }
+  function function_two(y) {
+                            value2=y;
+                            if(value1==1 && value2==1){
+                            function function_two(){
+                           alert("first one")
+
+                            }
+                              function_two();
+                            }
+                            else{
+                                  if(value1==1 && value2==2){
+                                      function function_two(){
+                                      alert(" 2")
+                                    }function_two();
+                                  }
+                                  else{
+                                       if(value1==1 && value2==3){
+                                      function function_two(){
+                                      alert("3")
+                                    }function_two();
+                                  }
+                                }  
+                              }  
+                           }
+</script>
+
+</body>
+</html>

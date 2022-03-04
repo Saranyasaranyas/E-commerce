@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <div id="x"></div>
+    <div>
+        <input type="button" value="ready" onclick="getimage()">
+    </div>
+    <div>
+        <image src="img/product-img/biscuites/New Project (9).jpg" alt="" id="m1"></image>
+    </div>
+    <button id="1" onclick="changeVal('val1')">b1</button>
+    <button id="2" onclick="changeVal('val2')">b2</button>
+    <input type="text" id="value">
+    <input type="text" id="value1">
+<script>
+        var value;
+            function changeVal(choice) {
+                if (choice == 'val1') {
+                   value="val1";
+                   document.getElementById("value").value="value1";
+                   document.getElementById("value1").value=value;
+                 }
+                else if (choice == 'val2'){
+                   document.getElementById("value").value=value;
+                }
+             }
+    function getimage(){
+            var img = document.createElement("img");
+            img.src = "img/product-img/biscuites/New Project (9).jpg";
+            var src = document.getElementById("x");
+            src.appendChild(img); 
+            document.getElementById("m1").src="img/product-img/biscuites/New Project (10).jpg";
+    }
+</script>
+</body>
+
+</html> 
